@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+html, body {
+	height: 100%;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+.bg {
+  background-image: url("https://wallpaper.dog/large/5549638.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 20vh;
+  transition: 0.3s;
+}
+
+.note_full {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0.6vw;
+}
+
+.note {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  border-radius: 6px;
+  width: 10vw;
+  height: 31vh;
+  padding: 5px;
+  margin-bottom: 1vh;
+  overflow: auto;
+  word-wrap: break-word;
+  background-color: rgba(255, 255, 255, 30%);
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  max-width: 150px;
+  align-self: center;
+}
+
+.text {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.del_img, .edit_img {
+  cursor: pointer;
+  height: 25px;
+  width: 25px;
+  margin: 0 10px;
+}
+
+.footer {
+  border-top: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 20vh;
+  background: rgb(97, 94, 152);
+}
+
+.setTitle, .set_text, .add_button_block {
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.add_button {
+  font-size: 15px;
+  font-weight: 600px;
+  padding: 10px 5px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.add_button:hover {
+  background-color: aqua;
+  font-size: 20px;
+  font-weight: 700;
+}
